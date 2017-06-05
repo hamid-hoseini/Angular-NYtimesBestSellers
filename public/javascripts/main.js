@@ -48,4 +48,4 @@ angular.module('BestSellers', ['ui.router'])
             })
         }
     })
-    .constant('apiKey', '3ff2a8140ba441acbdfcfb2c46ff962f');
+    .constant('apiKey', '');
