@@ -1,0 +1,63 @@
+body {
+    padding-top: 70px;
+    font-family: arial, helvetica, sans-serif;
+
+}
+
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin: 50px 0;
+}
+.page-subheading{
+    color: #aaa;
+
+}
+.navbar-inverse {
+    background-color: #fff;
+}
+.nyt-logo{
+    margin-top: 10px;
+}
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:active {
+
+    color: #000;
+}
+
+.img {
+    position: relative;
+    width:  150px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     contain;
+}
+.group{
+    margin: 0 0 25px 15px;
+}
+
+.freshness {
+    font-size: 10px;
+    line-height: 1.0625rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 15px;
+}
+.author {
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5px;
+    color: #000;
+}
+.desc {
+    color: #999;
+}
+.navbar-inverse .navbar-nav>li>a:active {
+    outline: 0;
+}

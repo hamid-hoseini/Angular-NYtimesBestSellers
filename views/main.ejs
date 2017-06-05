@@ -1,0 +1,54 @@
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Header -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">The New York Times Best Sellers
+                <small>Books</small>
+            </h1>
+            <p>
+                <h5 class="page-subheading">Authoritatively ranked lists of books sold in the United States, sorted by format and genre.</h5>
+            </p>
+            <br>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Projects Row -->
+    <div class="row" ng-repeat = "list in categoryList" >
+        <h4 class="group">{{list.display_name}} ></h4>
+        <div class="col-md-1"></div>
+        <div class="col-md-2 portfolio-item" ng-repeat = "item in list.books">
+            <a href="#">
+                <!--<img class="img-responsive" src="http://placehold.it/700x400" alt="">-->
+                <!--<img class="img-responsive" ng-src="{{item.book_image}}" alt="">-->
+                <div class="img" style="background-image:url('{{item.book_image}}');"></div>
+
+            </a>
+            <p class="freshness" ng-if="item.weeks_on_list>0">{{item.weeks_on_list}} WEEKS ON THE LIST</p>
+            <p class="freshness" ng-if="item.weeks_on_list == 0">NEW THIS WEEK</p>
+            <h5>
+                <a href="#">{{item.title}}</a>
+            </h5>
+            <p class="author">by {{item.author}}</p>
+            <p class="desc">{{item.description}}</p>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; NY Times Best Sellers 2017</p>
+            </div>
+        </div>
+        <!-- /.row -->
+    </footer>
+
+</div>
+<!-- /.container -->
